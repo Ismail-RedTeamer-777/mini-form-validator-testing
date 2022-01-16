@@ -1,0 +1,124 @@
+body
+{
+    font-family: arial;
+    background-color: yellow;
+}
+
+h1
+{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form
+{
+    width: 500px;
+    margin: 20px auto;
+}
+
+input
+{
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+    background-color: white;
+}
+
+#submit_button
+{
+    background-color: #4CAF50; /* vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#submit_button:hover
+{
+    color: red;
+    background-color: yellow;
+}
+
+#submit_button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#confirm_button
+{
+    background-color: #4CAF50; /* vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#confirm_button:hover
+{
+    color: red;
+    background-color: yellow;
+}
+
+#confirm_button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+button.invalid 
+{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+/* style spécial pour la validation */
+
+input.valid
+{
+    border-color: #36cc36; /* couleur verte si valide */
+}
+
+input.invalid
+{
+    border-color: orange; /* couleur orange si pas valide */
+}
+
+input + p
+{
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0; /* warning invisible */
+    height: 0;
+}
+
+input.invalid + p
+{
+    opacity: 1; /* warning visible */
+    height: auto;
+    margin-bottom: 20px;
+}

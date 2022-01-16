@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FORMULAIRE JS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>FORMULAIRE DE VALIDATION</h1>
+        <form>
+
+            <input type="text" id="prenom" placeholder="Prénom" required>
+            <p>Votre "prénom" doit être composé uniquement de lettres!</p>
+
+            <input type="text" id="nom" placeholder="Nom" required>
+            <p>Votre "nom" doit être composé uniquement de lettres!</p>
+
+            <input type="number" id="age" placeholder="Age" min='0' required>
+            <p>L'âge est invalide : vous devez être majeur!</p>
+
+            <input type="text" id="identifiant" placeholder="Identifiant" required>
+            <p>L'identifiant doit être composé seulement de lettres! (jusqu'à 12 caractères maximum)</p>
+
+            <input type="password" id="password1" placeholder="Mot de passe" required>
+            <span>Puissance de votre mot de passe : <span id="pourcentage"><b>0 %</b></span></span>
+
+            <input type="password" id="password2" placeholder="Confirmation mot de passe" required>
+            <p>Votre mot de passe saisi n'est pas identique au précédent!</p>
+
+            <input type="checkbox" id="CGU">
+            <label for="CGU"><b>Accepter les "Conditions Générales d'Utilisation".</b></label><br><br>
+
+            <button id="confirm_button" type="button">Confirmer</button>
+
+            <button id="submit_button" type="submit">Valider</button>
+
+        </form>
+
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>
